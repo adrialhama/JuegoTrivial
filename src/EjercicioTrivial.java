@@ -85,7 +85,6 @@ public class EjercicioTrivial {
 			fallo++;
 			break;
 		case 4:
-
 			System.out.println("La respuesta es Correcta");
 			total += puntos;
 			acierto++;
@@ -281,7 +280,6 @@ public class EjercicioTrivial {
 		switch (num) {
 
 		case 1:
-
 			System.out.println("La respuesta es Incorrecta");
 			total -= puntos;
 			fallo++;
@@ -303,6 +301,42 @@ public class EjercicioTrivial {
 			System.out.println("La respuesta es Correcta");
 			total += puntos;
 			acierto++;
+			break;
+
+		default:
+			System.out.println("La opción introducida no es correcta, por favor inserte un número entre 1 - 4");
+		}
+
+		// Novena Pregunta
+		System.out.println("\n9º ¿Qué nombre recibe un cowboy argentino?" + "\n1. Boludo" + "\n2. Pibe" + "\n3. Gaucho"
+				+ "\n4. Caballista");
+
+		num = sc.nextInt();
+
+		switch (num) {
+
+		case 1:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+
+		case 2:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+
+		case 3:
+			System.out.println("La respuesta es Correcta");
+			total += puntos;
+			acierto++;
+			break;
+
+		case 4:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
 			break;
 
 		default:
