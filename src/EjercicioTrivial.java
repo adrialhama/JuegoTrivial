@@ -271,6 +271,43 @@ public class EjercicioTrivial {
 		default:
 			System.out.println("La opción introducida no es correcta, por favor inserte un número entre 1 - 4");
 		}
+
+		// Octava Pregunta
+		System.out.println("\n8º ¿Cuál es la montaña más alta del mundo?" + "\n1. Pirineos" + "\n2. Mont Blanc"
+				+ "\n3. Kilimanjaro" + "\n4. Everest");
+
+		num = sc.nextInt();
+
+		switch (num) {
+
+		case 1:
+
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+
+		case 2:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+
+		case 3:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+
+		case 4:
+			System.out.println("La respuesta es Correcta");
+			total += puntos;
+			acierto++;
+			break;
+
+		default:
+			System.out.println("La opción introducida no es correcta, por favor inserte un número entre 1 - 4");
+		}
 		// Mensaje final total de puntos
 		System.out.println("El total de puntos es: " + total + ". El número de respuestas acertadas: " + acierto
 				+ ". El número de fallos: " + fallo);
