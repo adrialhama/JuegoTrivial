@@ -96,8 +96,8 @@ public class EjercicioTrivial {
 		}
 
 		// Tercera Pregunta
-		System.out.println("3º ¿En qué país se encuentra el río Po?" + "\n1. Italia" + "\n2. España" + "\n3. EEUU"
-				+ "\n4. China");
+		System.out.println(
+				"3º ¿En qué país se encuentra el río Po?" + "\n1. Italia" + "\n2. España" + "\n3. EEUU" + "\n4. China");
 
 		num = sc.nextInt();
 
@@ -128,41 +128,77 @@ public class EjercicioTrivial {
 		default:
 			System.out.println("La opción introducida no es correcta, por favor inserte un número entre 1 - 4");
 		}
-		
+
 		// Cuarta Pregunta
-				System.out.println("4º ¿Cuál es el país más visitado del mundo?" + "\n1. China" + "\n2. México" + "\n3. Francia"
-						+ "\n4. Inglaterra");
+		System.out.println("4º ¿Cuál es el país más visitado del mundo?" + "\n1. China" + "\n2. México" + "\n3. Francia"
+				+ "\n4. Inglaterra");
 
-				num = sc.nextInt();
+		num = sc.nextInt();
 
-				switch (num) {
+		switch (num) {
 
-				case 1:
-					System.out.println("La respuesta es Incorrecta");
-					total -= puntos;
-					fallo++;
-					break;
+		case 1:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
 
-				case 2:
-					System.out.println("La respuesta es Incorrecta");
-					total -= puntos;
-					fallo++;
-					break;
-				case 3:
-					System.out.println("La respuesta es Correcta");
-					total += puntos;
-					acierto++;
-					break;
-					
-				case 4:
-					System.out.println("La respuesta es Incorrecta");
-					total -= puntos;
-					fallo++;
-					break;
+		case 2:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+		case 3:
+			System.out.println("La respuesta es Correcta");
+			total += puntos;
+			acierto++;
+			break;
 
-				default:
-					System.out.println("La opción introducida no es correcta, por favor inserte un número entre 1 - 4");
-				}
+		case 4:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+
+		default:
+			System.out.println("La opción introducida no es correcta, por favor inserte un número entre 1 - 4");
+		}
+
+		// Quinta Pregunta
+		System.out.println("5º ¿En qué países es oficial el quechua es lengua oficial nacional?" + "\n1. Argentina"
+				+ "\n2. Perú" + "\n3. Polonia" + "\n4. Vietnam");
+
+		num = sc.nextInt();
+
+		switch (num) {
+
+		case 1:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+
+		case 2:
+			System.out.println("La respuesta es Correcta");
+			total += puntos;
+			acierto++;
+			break;
+
+		case 3:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+
+		case 4:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+
+		default:
+			System.out.println("La opción introducida no es correcta, por favor inserte un número entre 1 - 4");
+		}
 
 		// Mensaje final total de puntos
 		System.out.println("El total de puntos es: " + total + ". El número de respuestas acertadas: " + acierto
