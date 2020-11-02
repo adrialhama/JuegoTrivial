@@ -200,6 +200,42 @@ public class EjercicioTrivial {
 			System.out.println("La opción introducida no es correcta, por favor inserte un número entre 1 - 4");
 		}
 
+		// Sexta Pregunta
+		System.out.println("6º ¿En qué país se encuentra la península de Yucatán?" + "\n1. México" + "\n2. Chile"
+				+ "\n3. Japón" + "\n4. China");
+
+		num = sc.nextInt();
+
+		switch (num) {
+
+		case 1:
+			System.out.println("La respuesta es Correcta");
+			total += puntos;
+			acierto++;
+			break;
+
+		case 2:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+
+		case 3:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+
+		case 4:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+
+		default:
+			System.out.println("La opción introducida no es correcta, por favor inserte un número entre 1 - 4");
+		}
+
 		// Mensaje final total de puntos
 		System.out.println("El total de puntos es: " + total + ". El número de respuestas acertadas: " + acierto
 				+ ". El número de fallos: " + fallo);
