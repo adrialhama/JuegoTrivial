@@ -26,7 +26,7 @@ public class EjercicioTrivial {
 		// Se mostrará en pantalla la pregunta y la opciones se elegiran con un switch
 
 		// Primera Pregunta
-		System.out.println("1º ¿Cuál es la parte más profunda de la corteza terrestre?" + "\n1. La Antártida"
+		System.out.println("\n1º ¿Cuál es la parte más profunda de la corteza terrestre?" + "\n1. La Antártida"
 				+ "\n2. La fosa de las Marianas" + "\n3. Himalaya" + "\n4. El Lago Ness ");
 
 		num = sc.nextInt();
@@ -62,8 +62,8 @@ public class EjercicioTrivial {
 		}
 
 		// Segunda Pregunta
-		System.out.println("2º ¿Cuál es la capital de Marruecos?" + "\n1. Mauritania" + "\n2. Ceuta" + "\n3. Barcelona"
-				+ "\n4. Rabat");
+		System.out.println("\n2º ¿Cuál es la capital de Marruecos?" + "\n1. Mauritania" + "\n2. Ceuta"
+				+ "\n3. Barcelona" + "\n4. Rabat");
 
 		num = sc.nextInt();
 
@@ -96,8 +96,8 @@ public class EjercicioTrivial {
 		}
 
 		// Tercera Pregunta
-		System.out.println(
-				"3º ¿En qué país se encuentra el río Po?" + "\n1. Italia" + "\n2. España" + "\n3. EEUU" + "\n4. China");
+		System.out.println("\n3º ¿En qué país se encuentra el río Po?" + "\n1. Italia" + "\n2. España" + "\n3. EEUU"
+				+ "\n4. China");
 
 		num = sc.nextInt();
 
@@ -130,8 +130,8 @@ public class EjercicioTrivial {
 		}
 
 		// Cuarta Pregunta
-		System.out.println("4º ¿Cuál es el país más visitado del mundo?" + "\n1. China" + "\n2. México" + "\n3. Francia"
-				+ "\n4. Inglaterra");
+		System.out.println("\n4º ¿Cuál es el país más visitado del mundo?" + "\n1. China" + "\n2. México"
+				+ "\n3. Francia" + "\n4. Inglaterra");
 
 		num = sc.nextInt();
 
@@ -165,7 +165,7 @@ public class EjercicioTrivial {
 		}
 
 		// Quinta Pregunta
-		System.out.println("5º ¿En qué países es oficial el quechua es lengua oficial nacional?" + "\n1. Argentina"
+		System.out.println("\n5º ¿En qué países es oficial el quechua es lengua oficial nacional?" + "\n1. Argentina"
 				+ "\n2. Perú" + "\n3. Polonia" + "\n4. Vietnam");
 
 		num = sc.nextInt();
@@ -201,7 +201,7 @@ public class EjercicioTrivial {
 		}
 
 		// Sexta Pregunta
-		System.out.println("6º ¿En qué país se encuentra la península de Yucatán?" + "\n1. México" + "\n2. Chile"
+		System.out.println("\n6º ¿En qué país se encuentra la península de Yucatán?" + "\n1. México" + "\n2. Chile"
 				+ "\n3. Japón" + "\n4. China");
 
 		num = sc.nextInt();
@@ -236,6 +236,41 @@ public class EjercicioTrivial {
 			System.out.println("La opción introducida no es correcta, por favor inserte un número entre 1 - 4");
 		}
 
+		// Séptima Pregunta
+		System.out.println("\n7º ¿Cuál es el océano que baña las aguas de Sri Lanka?" + "\n1. Índico" + "\n2. Pacífico "
+				+ "\n3. Atlántico" + "\n4. Ártico");
+
+		num = sc.nextInt();
+
+		switch (num) {
+
+		case 1:
+			System.out.println("La respuesta es Correcta");
+			total += puntos;
+			acierto++;
+			break;
+
+		case 2:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+
+		case 3:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+
+		case 4:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+
+		default:
+			System.out.println("La opción introducida no es correcta, por favor inserte un número entre 1 - 4");
+		}
 		// Mensaje final total de puntos
 		System.out.println("El total de puntos es: " + total + ". El número de respuestas acertadas: " + acierto
 				+ ". El número de fallos: " + fallo);
