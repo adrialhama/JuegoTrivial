@@ -62,13 +62,13 @@ public class EjercicioTrivial {
 		}
 
 		// Segunda Pregunta
-		System.out.println("2º ¿Cuál es la capital de Marruecos?" + "\n1. Mauritania"
-				+ "\n2. Ceuta" + "\n3. Barcelona" + "\n4. Rabat");
+		System.out.println("2º ¿Cuál es la capital de Marruecos?" + "\n1. Mauritania" + "\n2. Ceuta" + "\n3. Barcelona"
+				+ "\n4. Rabat");
 
 		num = sc.nextInt();
 
 		switch (num) {
-		
+
 		case 1:
 			System.out.println("La respuesta es Incorrecta");
 			total -= puntos;
@@ -85,10 +85,44 @@ public class EjercicioTrivial {
 			fallo++;
 			break;
 		case 4:
-			
+
 			System.out.println("La respuesta es Correcta");
 			total += puntos;
 			acierto++;
+			break;
+
+		default:
+			System.out.println("La opción introducida no es correcta, por favor inserte un número entre 1 - 4");
+		}
+
+		// Tercera Pregunta
+		System.out.println("3º ¿En qué país se encuentra el río Po?" + "\n1. En Italia" + "\n2. España" + "\n3. EEUU"
+				+ "\n4. China");
+
+		num = sc.nextInt();
+
+		switch (num) {
+
+		case 1:
+			System.out.println("La respuesta es Correcta");
+			total += puntos;
+			acierto++;
+			break;
+
+		case 2:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+		case 3:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
+			break;
+		case 4:
+			System.out.println("La respuesta es Incorrecta");
+			total -= puntos;
+			fallo++;
 			break;
 
 		default:
