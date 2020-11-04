@@ -1,10 +1,10 @@
 
-<img width="475" height="300" src=".logo-trivial.png"/> 
+<img width="475" height="300" src="./logo-trivial.png"/> 
 
-- La temática será de Geografía
+# La temática será de **Geografía**
 
-- Cada respuesta acertada sumará 10 puntos, las preguntas no acertadas restarán 10.
+## Cada respuesta acertada sumará 10 puntos, las preguntas no acertadas restarán 10.
 
-- Se debe acertar mínimo 7 preguntas para obtener el logro en Geografía.
+## Se debe acertar mínimo 7 preguntas para obtener el logro en Geografía.
 
-- Al final se mostrarán las preguntas acertadas, falladas y el total de puntos obtenidos.
+## Al final se mostrarán las preguntas acertadas, falladas y el total de puntos obtenidos.
